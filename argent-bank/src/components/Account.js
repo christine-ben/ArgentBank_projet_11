@@ -14,6 +14,6 @@ function Account(props) {
       </section>
     );
   }
-  
+   
   export default Account
   //pour afficher les détails du compte. 
