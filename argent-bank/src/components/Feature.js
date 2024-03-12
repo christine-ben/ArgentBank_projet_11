@@ -10,4 +10,5 @@ function Feature(props) {
   }
   
   export default Feature;
+  
   //Le composant rend une structure HTML avec une image, un titre et un texte.
