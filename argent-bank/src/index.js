@@ -5,7 +5,7 @@ import ReactDOM from "react-dom/client";
 import store from "./store";
 import { Provider } from "react-redux";
 //Style Imports
-import "./style/main.css";
+import "../src/style/main.css";
 import App from "./App";
 
 
