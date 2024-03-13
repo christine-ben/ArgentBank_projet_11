@@ -4,7 +4,6 @@ import iconMoney from "../assets/image/icon-money.png";
 import iconSecurity from "../assets/image/icon-security.png";
 
 function Home() {
-
   return (
     <>
       <main>
