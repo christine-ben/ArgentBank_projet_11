@@ -93,7 +93,8 @@ export const usernameUpdateRequest = createAsyncThunk(
   }
 );
 
-// Slice pour gérer l'état de l'utilisateur
+       // Slice pour gérer l'état de l'utilisateur
+
 const userSlice = createSlice({
   name: "user",
   initialState: {
