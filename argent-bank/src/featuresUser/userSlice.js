@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 const url = "http://localhost:3001/api/v1/";
 
-// Actions asynchrones pour les requêtes API
+    // Actions asynchrones pour les requêtes API
 export const loginRequest = createAsyncThunk(
   "user/loginRequest",
   async (userLogs, { rejectWithValue }) => {
