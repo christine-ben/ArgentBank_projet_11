@@ -78,6 +78,7 @@ function User() {
                       id="firstname"
                       disabled
                       placeholder={profile.firstName}
+                      
                     />
                   </div>
                   <div className="input-wrapper">
