@@ -4,6 +4,7 @@ import userReducer from "./featuresUser/userSlice"
 
 
 //Appel à la fonction configureStore pour créer un store Redux.
+
 const store = configureStore({
     reducer: {
         user: userReducer
@@ -11,3 +12,4 @@ const store = configureStore({
 })
 
 export default store
+
