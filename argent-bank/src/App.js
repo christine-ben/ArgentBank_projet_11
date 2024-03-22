@@ -1,22 +1,24 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from './components/NavBar';
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import SignIn from "./pages/SignIn";
+import User from "./pages/User";
+import PageLayout from "./layout/pageLayout";
 
-function App() {
-    return (
-        <BrowserRouter>
-         <NavBar />
+const App = () => {
+  return (
+    <BrowserRouter>
       <Routes>
-        <Route>
+        <Route element={<PageLayout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/user" element={<User />} />
         </Route>
       </Routes>
       <Footer />
     </BrowserRouter>
-      );
-    
-}
+  );
+};
 
 export default App;
