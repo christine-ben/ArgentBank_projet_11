@@ -27,7 +27,7 @@ function SignIn() {
       <>
         <main className="main bg-dark">
           <section className="sign-in-content">
-          <FontAwesomeIcon icon={faUserCircle} />
+          <FontAwesomeIcon className="sign-in-icon" icon={faUserCircle} />
             <h1>Sign In</h1>
             <form onSubmit={loginTest}>
               <div className="input-wrapper">

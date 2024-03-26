@@ -45,6 +45,9 @@ body {
 
 .bg-dark {
   background-color: #12002b;
+  height: 765px;
+  padding-top: 22px;
+  position: relative;
 }
 
 .sr-only {
@@ -68,6 +71,9 @@ body {
   padding: 5px 20px;
 }
 
+.main-nav-logo{
+  width : 50%;
+}
 .main-nav a {
   font-weight: bold;
   color: #2c3e50;
@@ -180,31 +186,35 @@ body {
 }
 
 .sign-in-button {
+  background-color: #00bc77;
+  border: none; /* Removes default border */
+  color: #fff;
+  cursor: pointer; /* Hand cursor on hover*/
   display: block;
-  width: 100%;
-  padding: 8px;
   font-size: 1.1rem;
   font-weight: bold;
+  text-decoration: underline;
   margin-top: 1rem;
-  border-color: #00bc77;
-  background-color: #00bc77;
-  color: #fff;
+  padding: 0.5rem; 
+  width: 100%;
 }
 
+/* Define styles for sign-in content container*/
 .sign-in-content {
   box-sizing: border-box;
   background-color: white;
   width: 300px;
   margin: 0 auto;
+  margin-top: 0px;
   margin-top: 3rem;
   padding: 2rem;
 }
-
-.sign-in-icon {
-  font-size: 5rem;
-}
-
+  .sign-in-icon {
+    font-size: 1.2rem; 
+  }
+  
 .input-remember {
+  align-items: center;
   display: flex;
 }
 
@@ -224,7 +234,7 @@ body {
 }
 
 .input-wrapper input {
-  padding: 5px;
+  padding: 0.3125rem;
   font-size: 1.2rem;
 }
 
@@ -239,7 +249,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/*USER PAGE------------------*/
 .account {
   display: flex;
   justify-content: space-between;
@@ -288,6 +298,42 @@ body {
 .header {
   color: #fff;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*ajout--*/
+.edit-form{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.edit-form .input-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.edit-form input{
+  width: 45%;
+}
+
+.edit-submit{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hidden{
+  display: none;
+}
+
+.errorMessage{
+  color: darkred;
+  margin-top: 10px;
+  font-style: italic;
 }
 
 .transaction-button {

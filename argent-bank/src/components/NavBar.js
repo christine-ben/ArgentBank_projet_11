@@ -24,7 +24,7 @@ function Nav() {
       {token ? (
         <div>
           <Link className="main-nav-item" to="/user">
-          <FontAwesomeIcon icon={faUserCircle} />
+          <FontAwesomeIcon className="sign-in-icon" icon={faUserCircle} />
             {" " + profile?.userName}
           </Link>
           <Link
@@ -32,7 +32,7 @@ function Nav() {
             to="/"
             onClick={() => dispatch(logout())}
           >
-            <FontAwesomeIcon icon={faRightFromBracket} />
+            <FontAwesomeIcon className="sign-in-icon" icon={faRightFromBracket} />
             Sign Out
           </Link>
         </div>
