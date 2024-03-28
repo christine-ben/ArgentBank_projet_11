@@ -1,7 +1,7 @@
 import Feature from "../components/Feature";
-import iconChat from "../assets/image/icon-chat.png";
-import iconMoney from "../assets/image/icon-money.png";
-import iconSecurity from "../assets/image/icon-security.png";
+import iconChat from "../assets/image/icon-chat.webp";
+import iconMoney from "../assets/image/icon-money.webp";
+import iconSecurity from "../assets/image/icon-security.webp";
 
 function Home() {
   return (

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../assets/image/argentBankLogo.png";
+import Logo from "../assets/image/argentBankLogo.webp";
 import { useDispatch, useSelector } from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
