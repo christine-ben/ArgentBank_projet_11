@@ -6,7 +6,7 @@ import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { selectProfile, selectToken, logout } from "../featuresUser/userSlice";
 
-function Nav() {
+function NavBar() {
   const dispatch = useDispatch();
   const profile = useSelector(selectProfile);
   const token = useSelector(selectToken)
@@ -48,4 +48,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default NavBar;
