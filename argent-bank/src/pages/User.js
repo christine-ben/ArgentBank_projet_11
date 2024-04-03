@@ -7,7 +7,8 @@ import {
   selectProfile,
   usernameUpdateRequest,
   selectError,
-  resetError
+  resetError,
+  setErrorMessage, // Importez cette action depuis votre slice userSlice
 } from "../featuresUser/userSlice";
 import { useEffect } from "react";
 
@@ -27,11 +28,18 @@ function User() {
 
   const sendUpdate = (e) => {
     e.preventDefault();
-    const updatedUsername = new FormData(e.target).get("username")
+    // Récupère le nom d'utilisateur en supprimant les espaces avant et après
+    const updatedUsername = e.target.username.value.trim(); 
+    if (updatedUsername === "" || /^\s+$/.test(updatedUsername)) {
+      // Affiche un message d'erreur si le nom d'utilisateur est invalide
+      dispatch(setErrorMessage("Le nom d'utilisateur ne peut pas être vide ou contenir uniquement des espaces."));
+      return; // Arrête la soumission du formulaire
+    }
     const payload = { token, updatedUsername };
     dispatch(usernameUpdateRequest(payload));
-    toggleForm()
+    toggleForm();
   };
+  
 
   useEffect(() => {
     dispatch(profileRequest(token));
